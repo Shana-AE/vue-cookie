@@ -8,9 +8,8 @@
 
     var VueCookie = {
 
-        install: function (Vue) {
-            Vue.prototype.$cookie = this;
-            Vue.cookie = this;
+        install: function (app) {
+            app.config.globalProperties.$cookie = this;
         },
         set: function (name, value, daysOrOptions) {
             var opts = daysOrOptions;
@@ -37,9 +36,6 @@
         module.exports = VueCookie;
     } else if (typeof define == "function" && define.amd) {
         define([], function(){ return VueCookie; })
-    } else if (window.Vue) {
-        window.VueCookie = VueCookie;
-        Vue.use(VueCookie);
     }
 
 })();

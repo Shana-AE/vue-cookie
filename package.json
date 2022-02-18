@@ -9,8 +9,9 @@
   "scripts": {
     "test": "./node_modules/testem/testem.js ci",
     "test-dev": "./node_modules/testem/testem.js -f dev.testem.json",
-    "build": "gulp --production",
-    "build-test": "gulp --gulpfile test.gulpfile.js"
+    "build": "rollup -c ./rollup.config.js",
+    "build-test": "rollup -c ./test.rollup.config.js",
+    "prepare": "rollup -c ./rollup.config.js"
   },
   "repository": {
     "type": "git",
@@ -20,11 +21,12 @@
     "tiny-cookie": "^1.0"
   },
   "devDependencies": {
+    "@rollup/plugin-commonjs": "^21.0.1",
+    "@rollup/plugin-node-resolve": "^13.1.3",
     "jasmine": "^2.5.2",
-    "laravel-elixir": "^6.0.0-13",
-    "laravel-elixir-vue": "^0.1.8",
-    "laravel-elixir-webpack-official": "^1.0.9",
+    "rollup": "^2.67.2",
+    "rollup-plugin-terser": "^7.0.2",
     "testem": "~1.8",
-    "vue": "^2.0.5"
+    "vue": "^3.0.0"
   }
 }
