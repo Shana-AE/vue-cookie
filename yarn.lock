@@ -1533,6 +1533,13 @@ vary@~1.1.0:
   version "1.1.0"
   resolved "https://registry.yarnpkg.com/vary/-/vary-1.1.0.tgz#e1e5affbbd16ae768dd2674394b9ad3022653140"
 
+vue-cookie@^2.0.0:
+  version "2.0.0"
+  resolved "https://packages.aliyun.com/61e529144b66e5c57455d315/npm/npm-registry/vue-cookie/-/vue-cookie-2.0.0.tgz#09ea4190df06ebe13f32ffbdd073abc0793f27ad"
+  integrity sha512-VUa3xq7Ikt/waUvIw4NisOGTU28GCMtQpbIspXzTEMiCLzXJa23Ch9Ha8J7c1CUKLlMMQzrWPWOPgwy2dTxckA==
+  dependencies:
+    tiny-cookie "^1.0"
+
 vue@^3.0.0:
   version "3.2.31"
   resolved "https://registry.npmmirror.com/vue/-/vue-3.2.31.tgz#e0c49924335e9f188352816788a4cca10f817ce6"
